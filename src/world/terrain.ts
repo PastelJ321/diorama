@@ -1,12 +1,9 @@
 import * as T from 'three';
 import { M, random } from './materials';
 import { mesh, rock, box } from './geometry';
+import { radius,height } from './coastShape';
+export { radius,height } from './coastShape';
 
-export function radius(theta:number) { return 1+.045*Math.sin(theta*5+.6)+.025*Math.sin(theta*9-1.2); }
-export function height(x:number,z:number) {
-  const ridge=1/(1+Math.exp((z+.8)*.72));
-  return 1.35+ridge*3.1+.18*Math.sin(x*.55)*Math.cos(z*.4);
-}
 export function buildTerrain(parent:T.Group, occluders:T.Object3D[]) {
   const vertices:number[]=[],uv:number[]=[],indices:number[]=[],n=112;
   // Concentric topology: a continuous irregular coastline, no rectangular backing plate.

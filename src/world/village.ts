@@ -38,13 +38,25 @@ function roof(parent:T.Object3D,w:number,d:number,h:number,flat=false) {
   const shape=new T.Shape();shape.moveTo(-w/2-.13,0);shape.lineTo(0,rise);shape.lineTo(w/2+.13,0);shape.closePath();
   const g=new T.ExtrudeGeometry(shape,{depth:d+.28,bevelEnabled:true,bevelSegments:1,steps:1,bevelSize:.025,bevelThickness:.025});mesh(parent,g,M.roof[0],0,h,-d/2-.14);
   const count=Math.ceil(w/.22),cols=Math.ceil((d+.28)/.36);
-  const tileGeo=new T.CylinderGeometry(.115,.115,.4,7,1,true);
+  const tileGeo=clayTile();
   for(let i=0;i<=count;i++)for(let j=0;j<cols;j++) {
-    const x=-w/2-.12+i*(w+.24)/count,y=h+rise*(1-Math.abs(x)/(w/2+.13))+.045;
-    const tile=mesh(parent,tileGeo,M.roof[(i*7+j*3)%4],x,y,-d/2-.13+j*.36);tile.rotation.x=Math.PI/2;
+    const x=-w/2-.12+i*(w+.24)/count,y=h+rise*(1-Math.abs(x)/(w/2+.13))+.025;
+    const tile=mesh(parent,tileGeo,M.roof[(i*7+j*3)%4],x,y,-d/2-.13+j*.36);tile.rotation.z=x<0?Math.atan(rise/(w/2+.13)):-Math.atan(rise/(w/2+.13));
   }
-  for(let j=0;j<cols;j++){const cap=mesh(parent,tileGeo,M.roof[1],0,h+rise+.12,-d/2-.13+j*.36);cap.rotation.x=Math.PI/2;cap.scale.set(1.15,1,1.15);}
+  for(let j=0;j<cols;j++){const cap=mesh(parent,tileGeo,M.roof[1],0,h+rise+.055,-d/2-.13+j*.36);cap.scale.set(1.15,1.15,1);}
   box(parent,M.cream,0,h-.04,d/2+.08,w+.18,.09,.08);
+}
+function clayTile(){
+  const positions:number[]=[],uv:number[]=[],indices:number[]=[],segments=10;
+  for(let layer=0;layer<2;layer++)for(let end=0;end<2;end++)for(let j=0;j<=segments;j++){
+    const a=j/segments*Math.PI,r=(end?.116:.104)*(layer?.8:1);positions.push(Math.cos(a)*r,Math.sin(a)*r,end?.21:-.21);uv.push(j/segments,end);
+  }
+  const stride=segments+1;
+  for(let j=0;j<segments;j++){
+    const a=j,b=j+1,c=j+stride,d=c+1;indices.push(a,b,c,b,d,c,a+stride*2,c+stride*2,b+stride*2,b+stride*2,c+stride*2,d+stride*2);
+    for(const end of [0,1]){const u=end*stride+j,v=u+1,w=u+stride*2,q=w+1;if(end)indices.push(u,v,w,v,q,w);else indices.push(u,w,v,v,w,q);}
+  }
+  const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(positions,3));g.setAttribute('uv',new T.Float32BufferAttribute(uv,2));g.setIndex(indices);g.computeVertexNormals();return g;
 }
 function house(parent:T.Group,occluders:T.Object3D[],x:number,z:number,w:number,d:number,h:number,color:number,angle=0,balcony=true,flat=false) {
   const g=new T.Group();g.position.set(x,height(x,z)+.04,z);g.rotation.y=angle;parent.add(g);
@@ -78,7 +90,11 @@ function house(parent:T.Group,occluders:T.Object3D[],x:number,z:number,w:number,
 
 function tree(parent:T.Group,x:number,z:number,s=1,cypress=false) {
   const y=height(x,z);cylinder(parent,M.trunk,x,y+s*.7,z,.095*s,s*1.4,.065*s,7);
-  if(cypress) {for(let i=0;i<4;i++)ball(parent,M.cypress,x,y+s*(.9+i*.44),z,s*(.37-i*.057),s*.66,s*(.37-i*.057));}
+  if(cypress) {
+    const profile=[[0,0],[.19,.12],[.33,.45],[.36,.9],[.31,1.45],[.21,1.95],[.12,2.36],[.02,2.65],[0,2.7]].map(([r,h])=>new T.Vector2(r,h));
+    const geo=new T.LatheGeometry(profile,14),p=geo.getAttribute('position');for(let i=0;i<p.count;i++){const xx=p.getX(i),zz=p.getZ(i),h=p.getY(i),f=1+.06*Math.sin(xx*15+zz*11+h*8);p.setXYZ(i,xx*f,h,zz*f);}geo.computeVertexNormals();
+    const crown=mesh(parent,geo,M.cypress,x,y+s*.4,z);crown.scale.setScalar(s);
+  }
   else {
     for(let i=0;i<7;i++){const a=i*2.4;const p=new T.Vector3(x+Math.cos(a)*s*.47,y+s*(1.4+random()*.5),z+Math.sin(a)*s*.47);line(parent,M.trunk,new T.Vector3(x,y+s*.85,z),p,.045*s);ball(parent,M.leaf[i%3],p.x,p.y,p.z,s*.5,s*.4,s*.47);}
   }

@@ -1,0 +1,1038 @@
+[
+  {
+    "case": "Opaline Lagoon / Morning / High",
+    "state": {
+      "fps": 60,
+      "elapsed": 17,
+      "geometries": 61,
+      "textures": 21,
+      "drawCalls": 315,
+      "triangles": 3119257,
+      "totalRipples": 0,
+      "inputs": {
+        "hover": 0,
+        "click": 0,
+        "drag": 0,
+        "orbit": 0,
+        "lastDown": [
+          0,
+          0
+        ],
+        "lastMode": ""
+      },
+      "ripples": 0,
+      "rippleEnergy": 0,
+      "gpuHeightError": 5.590316245890348e-7,
+      "gpuChecks": 5,
+      "profile": "Opaline Lagoon",
+      "quality": "High",
+      "simulationSize": 384,
+      "targets": {
+        "reflection": [
+          1024,
+          1024
+        ],
+        "refraction": [
+          1296,
+          810
+        ]
+      },
+      "zoom": 1,
+      "yaw": 0.64,
+      "sunY": 20,
+      "night": 0,
+      "sea": "a6e6d9",
+      "lighthouse": null,
+      "boats": [
+        false,
+        false,
+        false
+      ],
+      "points": {
+        "sea": {
+          "x": 912,
+          "y": 849
+        },
+        "land": {
+          "x": 833,
+          "y": 438
+        },
+        "lighthouse": {
+          "x": 975,
+          "y": 560
+        },
+        "boat": {
+          "x": 832,
+          "y": 777
+        }
+      }
+    }
+  },
+  {
+    "case": "Click + drag / High",
+    "state": {
+      "fps": 60,
+      "elapsed": 35,
+      "geometries": 61,
+      "textures": 21,
+      "drawCalls": 315,
+      "triangles": 3119257,
+      "totalRipples": 34,
+      "inputs": {
+        "hover": 0,
+        "click": 2,
+        "drag": 4,
+        "orbit": 0,
+        "lastDown": [
+          1080,
+          730
+        ],
+        "lastMode": "sea"
+      },
+      "ripples": 0,
+      "rippleEnergy": 0,
+      "gpuHeightError": 1.8769627751244293e-7,
+      "gpuChecks": 11,
+      "profile": "Opaline Lagoon",
+      "quality": "High",
+      "simulationSize": 384,
+      "targets": {
+        "reflection": [
+          1024,
+          1024
+        ],
+        "refraction": [
+          1296,
+          810
+        ]
+      },
+      "zoom": 1,
+      "yaw": 0.64,
+      "sunY": 20,
+      "night": 0,
+      "sea": "a6e6d9",
+      "lighthouse": null,
+      "boats": [
+        false,
+        false,
+        false
+      ],
+      "points": {
+        "sea": {
+          "x": 912,
+          "y": 849
+        },
+        "land": {
+          "x": 833,
+          "y": 438
+        },
+        "lighthouse": {
+          "x": 975,
+          "y": 560
+        },
+        "boat": {
+          "x": 832,
+          "y": 777
+        }
+      }
+    }
+  },
+  {
+    "case": "Sapphire Coast / Noon / High",
+    "state": {
+      "fps": 60,
+      "elapsed": 68,
+      "geometries": 61,
+      "textures": 21,
+      "drawCalls": 241,
+      "triangles": 2443160,
+      "totalRipples": 34,
+      "inputs": {
+        "hover": 0,
+        "click": 2,
+        "drag": 4,
+        "orbit": 0,
+        "lastDown": [
+          1080,
+          730
+        ],
+        "lastMode": "sea"
+      },
+      "ripples": 0,
+      "rippleEnergy": 0,
+      "gpuHeightError": 6.965561284242444e-7,
+      "gpuChecks": 22,
+      "profile": "Sapphire Coast",
+      "quality": "High",
+      "simulationSize": 384,
+      "targets": {
+        "reflection": [
+          1024,
+          1024
+        ],
+        "refraction": [
+          1296,
+          810
+        ]
+      },
+      "zoom": 1,
+      "yaw": 0.64,
+      "sunY": 33,
+      "night": 0,
+      "sea": "64d5b1",
+      "lighthouse": null,
+      "boats": [
+        false,
+        false,
+        false
+      ],
+      "points": {
+        "sea": {
+          "x": 912,
+          "y": 849
+        },
+        "land": {
+          "x": 833,
+          "y": 438
+        },
+        "lighthouse": {
+          "x": 975,
+          "y": 560
+        },
+        "boat": {
+          "x": 832,
+          "y": 777
+        }
+      }
+    }
+  },
+  {
+    "case": "Active input / High",
+    "state": {
+      "fps": 60,
+      "elapsed": 69,
+      "geometries": 61,
+      "textures": 21,
+      "drawCalls": 241,
+      "triangles": 2443160,
+      "totalRipples": 51,
+      "inputs": {
+        "hover": 0,
+        "click": 4,
+        "drag": 7,
+        "orbit": 0,
+        "lastDown": [
+          1200,
+          720
+        ],
+        "lastMode": "sea"
+      },
+      "ripples": 1,
+      "rippleEnergy": 1.8460951535343625e-7,
+      "gpuHeightError": 6.965561284242444e-7,
+      "gpuChecks": 22,
+      "profile": "Sapphire Coast",
+      "quality": "High",
+      "simulationSize": 384,
+      "targets": {
+        "reflection": [
+          1024,
+          1024
+        ],
+        "refraction": [
+          1296,
+          810
+        ]
+      },
+      "zoom": 1,
+      "yaw": 0.64,
+      "sunY": 33,
+      "night": 0,
+      "sea": "64d5b1",
+      "lighthouse": null,
+      "boats": [
+        false,
+        false,
+        false
+      ],
+      "points": {
+        "sea": {
+          "x": 912,
+          "y": 849
+        },
+        "land": {
+          "x": 833,
+          "y": 438
+        },
+        "lighthouse": {
+          "x": 975,
+          "y": 560
+        },
+        "boat": {
+          "x": 832,
+          "y": 777
+        }
+      }
+    }
+  },
+  {
+    "case": "Pearlescent Dusk / Golden Hour / High",
+    "state": {
+      "fps": 60,
+      "elapsed": 105,
+      "geometries": 61,
+      "textures": 21,
+      "drawCalls": 315,
+      "triangles": 3119257,
+      "totalRipples": 51,
+      "inputs": {
+        "hover": 0,
+        "click": 4,
+        "drag": 7,
+        "orbit": 0,
+        "lastDown": [
+          1200,
+          720
+        ],
+        "lastMode": "sea"
+      },
+      "ripples": 0,
+      "rippleEnergy": 0,
+      "gpuHeightError": 4.6315870072533016e-7,
+      "gpuChecks": 35,
+      "profile": "Pearlescent Dusk",
+      "quality": "High",
+      "simulationSize": 384,
+      "targets": {
+        "reflection": [
+          1024,
+          1024
+        ],
+        "refraction": [
+          1296,
+          810
+        ]
+      },
+      "zoom": 1,
+      "yaw": 0.64,
+      "sunY": 11,
+      "night": 0,
+      "sea": "a7d6d3",
+      "lighthouse": null,
+      "boats": [
+        false,
+        false,
+        false
+      ],
+      "points": {
+        "sea": {
+          "x": 912,
+          "y": 849
+        },
+        "land": {
+          "x": 833,
+          "y": 438
+        },
+        "lighthouse": {
+          "x": 975,
+          "y": 560
+        },
+        "boat": {
+          "x": 832,
+          "y": 777
+        }
+      }
+    }
+  },
+  {
+    "case": "Moonlit Azure / Night / High",
+    "state": {
+      "fps": 60,
+      "elapsed": 294,
+      "geometries": 61,
+      "textures": 21,
+      "drawCalls": 319,
+      "triangles": 3120537,
+      "totalRipples": 51,
+      "inputs": {
+        "hover": 0,
+        "click": 4,
+        "drag": 7,
+        "orbit": 0,
+        "lastDown": [
+          1200,
+          720
+        ],
+        "lastMode": "sea"
+      },
+      "ripples": 0,
+      "rippleEnergy": 0,
+      "gpuHeightError": 0.0000012370189707358592,
+      "gpuChecks": 97,
+      "profile": "Moonlit Azure",
+      "quality": "High",
+      "simulationSize": 384,
+      "targets": {
+        "reflection": [
+          1024,
+          1024
+        ],
+        "refraction": [
+          1296,
+          810
+        ]
+      },
+      "zoom": 1,
+      "yaw": 0.64,
+      "sunY": 20,
+      "night": 1,
+      "sea": "7cc7cb",
+      "lighthouse": null,
+      "boats": [
+        false,
+        false,
+        false
+      ],
+      "points": {
+        "sea": {
+          "x": 912,
+          "y": 849
+        },
+        "land": {
+          "x": 833,
+          "y": 438
+        },
+        "lighthouse": {
+          "x": 975,
+          "y": 560
+        },
+        "boat": {
+          "x": 832,
+          "y": 777
+        }
+      }
+    }
+  },
+  {
+    "case": "Objects / Emerald Morning",
+    "state": {
+      "fps": 60,
+      "elapsed": 349,
+      "geometries": 61,
+      "textures": 21,
+      "drawCalls": 316,
+      "triangles": 3119269,
+      "totalRipples": 51,
+      "inputs": {
+        "hover": 0,
+        "click": 4,
+        "drag": 7,
+        "orbit": 0,
+        "lastDown": [
+          832,
+          777
+        ],
+        "lastMode": "orbit"
+      },
+      "ripples": 0,
+      "rippleEnergy": 0,
+      "gpuHeightError": 0.000001138913669818109,
+      "gpuChecks": 115,
+      "profile": "Emerald Dream",
+      "quality": "High",
+      "simulationSize": 384,
+      "targets": {
+        "reflection": [
+          1024,
+          1024
+        ],
+        "refraction": [
+          1296,
+          810
+        ]
+      },
+      "zoom": 1,
+      "yaw": 0.64,
+      "sunY": 20,
+      "night": 0,
+      "sea": "b0e3c8",
+      "lighthouse": false,
+      "boats": [
+        false,
+        false,
+        true
+      ],
+      "points": {
+        "sea": {
+          "x": 912,
+          "y": 849
+        },
+        "land": {
+          "x": 833,
+          "y": 438
+        },
+        "lighthouse": {
+          "x": 975,
+          "y": 560
+        },
+        "boat": {
+          "x": 849,
+          "y": 796
+        }
+      }
+    }
+  },
+  {
+    "case": "Custom color / Balanced",
+    "state": {
+      "fps": 60,
+      "elapsed": 476,
+      "geometries": 61,
+      "textures": 17,
+      "drawCalls": 157,
+      "triangles": 1427554,
+      "totalRipples": 51,
+      "inputs": {
+        "hover": 0,
+        "click": 4,
+        "drag": 7,
+        "orbit": 0,
+        "lastDown": [
+          832,
+          777
+        ],
+        "lastMode": "orbit"
+      },
+      "ripples": 0,
+      "rippleEnergy": 0,
+      "gpuHeightError": 0.0000033637039274295177,
+      "gpuChecks": 158,
+      "profile": "Custom",
+      "quality": "Balanced",
+      "simulationSize": 256,
+      "targets": {
+        "reflection": [
+          512,
+          512
+        ],
+        "refraction": [
+          792,
+          495
+        ]
+      },
+      "zoom": 1,
+      "yaw": 0.64,
+      "sunY": 20,
+      "night": 0,
+      "sea": "abc7cc",
+      "lighthouse": false,
+      "boats": [
+        false,
+        false,
+        true
+      ],
+      "points": {
+        "sea": {
+          "x": 912,
+          "y": 849
+        },
+        "land": {
+          "x": 833,
+          "y": 438
+        },
+        "lighthouse": {
+          "x": 975,
+          "y": 560
+        },
+        "boat": {
+          "x": 840,
+          "y": 781
+        }
+      }
+    }
+  },
+  {
+    "case": "Repeated quality switches during wave",
+    "state": {
+      "fps": 60,
+      "elapsed": 476,
+      "geometries": 61,
+      "textures": 17,
+      "drawCalls": 157,
+      "triangles": 1427554,
+      "totalRipples": 51,
+      "inputs": {
+        "hover": 0,
+        "click": 4,
+        "drag": 7,
+        "orbit": 0,
+        "lastDown": [
+          832,
+          777
+        ],
+        "lastMode": "orbit"
+      },
+      "ripples": 0,
+      "rippleEnergy": 0,
+      "gpuHeightError": 0.0000033637039274295177,
+      "gpuChecks": 158,
+      "profile": "Custom",
+      "quality": "Balanced",
+      "simulationSize": 256,
+      "targets": {
+        "reflection": [
+          512,
+          512
+        ],
+        "refraction": [
+          792,
+          495
+        ]
+      },
+      "zoom": 1,
+      "yaw": 0.64,
+      "sunY": 20,
+      "night": 0,
+      "sea": "abc7cc",
+      "lighthouse": false,
+      "boats": [
+        false,
+        false,
+        true
+      ],
+      "points": {
+        "sea": {
+          "x": 912,
+          "y": 849
+        },
+        "land": {
+          "x": 833,
+          "y": 438
+        },
+        "lighthouse": {
+          "x": 975,
+          "y": 560
+        },
+        "boat": {
+          "x": 840,
+          "y": 781
+        }
+      }
+    }
+  },
+  {
+    "case": "Close water / orbit + zoom",
+    "state": {
+      "fps": 53,
+      "elapsed": 529,
+      "geometries": 61,
+      "textures": 21,
+      "drawCalls": 214,
+      "triangles": 2440244,
+      "totalRipples": 53,
+      "inputs": {
+        "hover": 1,
+        "click": 5,
+        "drag": 7,
+        "orbit": 8,
+        "lastDown": [
+          833,
+          438
+        ],
+        "lastMode": "orbit"
+      },
+      "ripples": 0,
+      "rippleEnergy": 0,
+      "gpuHeightError": 0.000003703399348214953,
+      "gpuChecks": 175,
+      "profile": "Opaline Lagoon",
+      "quality": "High",
+      "simulationSize": 384,
+      "targets": {
+        "reflection": [
+          1024,
+          1024
+        ],
+        "refraction": [
+          1296,
+          810
+        ]
+      },
+      "zoom": 2.1,
+      "yaw": 0.605,
+      "sunY": 20,
+      "night": 0,
+      "sea": "a6e6d9",
+      "lighthouse": false,
+      "boats": [
+        false,
+        false,
+        true
+      ],
+      "points": {
+        "sea": {
+          "x": 1162,
+          "y": 1010
+        },
+        "land": {
+          "x": 956,
+          "y": 411
+        },
+        "lighthouse": {
+          "x": 1274,
+          "y": 515
+        },
+        "boat": {
+          "x": 1021,
+          "y": 948
+        }
+      }
+    }
+  },
+  {
+    "case": "Mobile 390 x 844 / Automatic",
+    "state": {
+      "fps": 60,
+      "elapsed": 682,
+      "geometries": 61,
+      "textures": 15,
+      "drawCalls": 157,
+      "triangles": 1427554,
+      "totalRipples": 54,
+      "inputs": {
+        "hover": 1,
+        "click": 6,
+        "drag": 7,
+        "orbit": 8,
+        "lastDown": [
+          440,
+          730
+        ],
+        "lastMode": "sea"
+      },
+      "ripples": 0,
+      "rippleEnergy": 0,
+      "gpuHeightError": 0.000002524069861828404,
+      "gpuChecks": 226,
+      "profile": "Opaline Lagoon",
+      "quality": "Balanced",
+      "simulationSize": 256,
+      "targets": {
+        "reflection": [
+          512,
+          512
+        ],
+        "refraction": [
+          215,
+          464
+        ]
+      },
+      "zoom": 1,
+      "yaw": 0.64,
+      "sunY": 20,
+      "night": 0,
+      "sea": "a6e6d9",
+      "lighthouse": false,
+      "boats": [
+        false,
+        false,
+        true
+      ],
+      "points": {
+        "sea": {
+          "x": 233,
+          "y": 650
+        },
+        "land": {
+          "x": 195,
+          "y": 451
+        },
+        "lighthouse": {
+          "x": 264,
+          "y": 510
+        },
+        "boat": {
+          "x": 173,
+          "y": 619
+        }
+      }
+    },
+    "overflow": false
+  },
+  {
+    "case": "Wave before resampling",
+    "state": {
+      "fps": 49,
+      "elapsed": 866,
+      "geometries": 61,
+      "textures": 21,
+      "drawCalls": 241,
+      "triangles": 2443160,
+      "totalRipples": 55,
+      "inputs": {
+        "hover": 1,
+        "click": 7,
+        "drag": 7,
+        "orbit": 8,
+        "lastDown": [
+          1210,
+          650
+        ],
+        "lastMode": "sea"
+      },
+      "ripples": 1,
+      "rippleEnergy": 1.4756956733666876e-7,
+      "gpuHeightError": 0.0000036808034410557022,
+      "gpuChecks": 287,
+      "profile": "Crystal Turquoise",
+      "quality": "High",
+      "simulationSize": 384,
+      "targets": {
+        "reflection": [
+          1024,
+          1024
+        ],
+        "refraction": [
+          1296,
+          810
+        ]
+      },
+      "zoom": 1,
+      "yaw": 0.64,
+      "sunY": 20,
+      "night": 0,
+      "sea": "84deca",
+      "lighthouse": false,
+      "boats": [
+        false,
+        false,
+        true
+      ],
+      "points": {
+        "sea": {
+          "x": 912,
+          "y": 849
+        },
+        "land": {
+          "x": 833,
+          "y": 438
+        },
+        "lighthouse": {
+          "x": 975,
+          "y": 560
+        },
+        "boat": {
+          "x": 789,
+          "y": 776
+        }
+      }
+    }
+  },
+  {
+    "case": "Wave after Balanced + force orbit",
+    "state": {
+      "fps": 55,
+      "elapsed": 867,
+      "geometries": 61,
+      "textures": 17,
+      "drawCalls": 157,
+      "triangles": 1427554,
+      "totalRipples": 55,
+      "inputs": {
+        "hover": 1,
+        "click": 7,
+        "drag": 7,
+        "orbit": 8,
+        "lastDown": [
+          1210,
+          650
+        ],
+        "lastMode": "orbit"
+      },
+      "ripples": 1,
+      "rippleEnergy": 4.037916133957509e-8,
+      "gpuHeightError": 0.0000036808034410557022,
+      "gpuChecks": 287,
+      "profile": "Crystal Turquoise",
+      "quality": "Balanced",
+      "simulationSize": 256,
+      "targets": {
+        "reflection": [
+          512,
+          512
+        ],
+        "refraction": [
+          792,
+          495
+        ]
+      },
+      "zoom": 1,
+      "yaw": 0.64,
+      "sunY": 20,
+      "night": 0,
+      "sea": "84deca",
+      "lighthouse": false,
+      "boats": [
+        false,
+        false,
+        true
+      ],
+      "points": {
+        "sea": {
+          "x": 912,
+          "y": 849
+        },
+        "land": {
+          "x": 833,
+          "y": 438
+        },
+        "lighthouse": {
+          "x": 975,
+          "y": 560
+        },
+        "boat": {
+          "x": 791,
+          "y": 775
+        }
+      }
+    }
+  },
+  {
+    "case": "Wave after High + Shift orbit",
+    "state": {
+      "fps": 51,
+      "elapsed": 869,
+      "geometries": 61,
+      "textures": 21,
+      "drawCalls": 241,
+      "triangles": 2443160,
+      "totalRipples": 55,
+      "inputs": {
+        "hover": 1,
+        "click": 7,
+        "drag": 7,
+        "orbit": 8,
+        "lastDown": [
+          1210,
+          650
+        ],
+        "lastMode": "orbit"
+      },
+      "ripples": 1,
+      "rippleEnergy": 5.14776950666475e-9,
+      "gpuHeightError": 0.0000032137047905125837,
+      "gpuChecks": 288,
+      "profile": "Crystal Turquoise",
+      "quality": "High",
+      "simulationSize": 384,
+      "targets": {
+        "reflection": [
+          1024,
+          1024
+        ],
+        "refraction": [
+          1296,
+          810
+        ]
+      },
+      "zoom": 1,
+      "yaw": 0.64,
+      "sunY": 20,
+      "night": 0,
+      "sea": "84deca",
+      "lighthouse": false,
+      "boats": [
+        false,
+        false,
+        true
+      ],
+      "points": {
+        "sea": {
+          "x": 912,
+          "y": 849
+        },
+        "land": {
+          "x": 833,
+          "y": 438
+        },
+        "lighthouse": {
+          "x": 975,
+          "y": 560
+        },
+        "boat": {
+          "x": 796,
+          "y": 772
+        }
+      }
+    }
+  },
+  {
+    "case": "Legacy Mediterranean / Morning",
+    "state": {
+      "fps": 52,
+      "elapsed": 125,
+      "geometries": 61,
+      "textures": 21,
+      "drawCalls": 317,
+      "triangles": 3119281,
+      "totalRipples": 0,
+      "inputs": {
+        "hover": 0,
+        "click": 0,
+        "drag": 0,
+        "orbit": 0,
+        "lastDown": [
+          0,
+          0
+        ],
+        "lastMode": ""
+      },
+      "ripples": 0,
+      "rippleEnergy": 0,
+      "gpuHeightError": 9.348750304866149e-7,
+      "gpuChecks": 41,
+      "profile": "Crystal Turquoise",
+      "quality": "High",
+      "simulationSize": 384,
+      "targets": {
+        "reflection": [
+          1024,
+          1024
+        ],
+        "refraction": [
+          1296,
+          810
+        ]
+      },
+      "zoom": 1,
+      "yaw": 0.64,
+      "sunY": 20,
+      "night": 0,
+      "sea": "84deca",
+      "lighthouse": null,
+      "boats": [
+        false,
+        false,
+        false
+      ],
+      "points": {
+        "sea": {
+          "x": 912,
+          "y": 849
+        },
+        "land": {
+          "x": 833,
+          "y": 438
+        },
+        "lighthouse": {
+          "x": 975,
+          "y": 560
+        },
+        "boat": {
+          "x": 832,
+          "y": 777
+        }
+      }
+    }
+  }
+]

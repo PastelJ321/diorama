@@ -4,7 +4,7 @@ import { mergeGeometries, mergeVertices } from 'three/addons/utils/BufferGeometr
 
 const cube = new T.BoxGeometry(1, 1, 1);
 const rounded = new RoundedBoxGeometry(1, 1, 1, 2, .045);
-const sphere = new T.SphereGeometry(1, 10, 7);
+const sphere = new T.SphereGeometry(1, 16, 11);
 let weatheredRock:T.BufferGeometry = new T.IcosahedronGeometry(1, 3);
 {
   const positions=weatheredRock.getAttribute('position');
@@ -38,8 +38,10 @@ export function curve(parent:T.Object3D,material:T.Material,points:T.Vector3[],r
 export function bake(group:T.Group) {
   group.updateMatrixWorld(true);
   const buckets=new Map<T.Material,T.BufferGeometry[]>();
+  const castFlags=new Map<T.Material,boolean>(),receiveFlags=new Map<T.Material,boolean>();
   group.traverse(obj=> { if(obj instanceof T.Mesh && !Array.isArray(obj.material)) {
     let list=buckets.get(obj.material);if(!list) {list=[];buckets.set(obj.material,list);}
+    castFlags.set(obj.material,(castFlags.get(obj.material)??false)||obj.castShadow);receiveFlags.set(obj.material,(receiveFlags.get(obj.material)??false)||obj.receiveShadow);
     const geo=(obj.geometry.index?obj.geometry.toNonIndexed():obj.geometry.clone()).applyMatrix4(obj.matrixWorld);
     if(!geo.getAttribute('uv')) geo.setAttribute('uv',new T.BufferAttribute(new Float32Array(geo.getAttribute('position').count*2),2));
     list.push(geo);
@@ -47,7 +49,7 @@ export function bake(group:T.Group) {
   const result=new T.Group(); result.name='Static village · material batches';
   for(const [material,geometries] of buckets) {
     const geometry=mergeGeometries(geometries,false);if(!geometry)throw new Error('Incompatible static geometry');
-    const obj=mesh(result,geometry,material);obj.frustumCulled=true;
+    const obj=mesh(result,geometry,material);obj.frustumCulled=true;obj.castShadow=castFlags.get(material)??false;obj.receiveShadow=receiveFlags.get(material)??false;
     geometries.forEach(g=>g.dispose());
   }
   // Source geometries are no longer used, including shared primitive geometries.
